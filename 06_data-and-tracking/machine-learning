@@ -1,3 +1,55 @@
-### Machine Learning KNN
+# Machine Learning 
+
+### KNN Classifier 
 The k-nearest neighbors (KNN) algorithm is a non-parametric, supervised learning classifier, which uses proximity to make classifications or predictions about the grouping of an individual data point. It is one of the popular and simplest classification and regression classifiers used in Machine Learning.
+- Requires all entries in our data to be numerical 
+
+### Regressor
+
+
+### Data Science Life Cycle 
+1. Business Understanding: Ask relevant questions and define objectives for the problem that needs to be tackled.
+2. Data Mining: Gather and scrape the data necessary for the project. 
+3. Data Cleaning: Fix the inconsistenties within the data and handle the missing values. 
+4. Data Exploration: Form hypotheses about your defined problem by visually analyzing the data. 
+5. Feature Engineering: Select important features and construct more meaningful ones using the raw data that you have. 
+6. Predictive Modeling: Train machine learning models, evaluate their performance, and use them to make predictions.
+7. Data visualization: Ccommunicate the findings with the key stakeholders using plots and interactive visualizations.
+
+### Feature Engineering 
+Different algorithms have distinct requirements in order for us to fit them to our data. Some require:
+- Only numerical values 
+- Only categorical values 
+- No null values 
+
+Note: Make correct transformations in order to make the data suitable for specific or different algorithms. 
+
+KNN Classifier and Regressor are some of the predictives models, on the other hand some models, like Naive-Bayes requires all entries to be categorical.
+
+Feature Engineering - One Hot Encoding 
+- One-hot encoding converts categorical variables into numerical (binary vectors) where each category is represented by a single bit, indicating its presence. 
+
+Feature Engineering - Label Encoding 
+- Label encoding for ordinal data assigns numerical values to categories based on their order or ranking 
+
+Feature Engineering - Binning 
+- Grouping a continous variable into intervals can make analysis more intuitive and can highlight patterns better in some cases.
+
+**Feature Scaling**
+- Feature scaling is the process of adjusting the range of feature in a dataset to make sure they're all on a similar scale - which might help improve machine learning algorithms. 
+
+- MinMaxScaler 
+This is a normalization technique that scales features to a specified range, between 0 and 1, preserving the relationship between data points. 
+
+- Z-score
+This is a way to standardize all your data in a way that tells you how many standard deviations each point is from the mean. 
+
+Note: Normalizing or standardizing the data can improve the models by a lot, especially when those modeels are distance based. 
+
+### Feature Selection 
+- In ML we want features to be highly correlated with the target, but not between themselves. 
+- High correlation among features themselves, can lead to redundancy and instability in models, potentially degrading performance. 
+
+For example, when dealing with categorical data, check if two features are correlated with Chi-square test. 
+For numerical data, computing correlation matrix allows you to see the relationship between features between themselves and also with the targed. 
 
