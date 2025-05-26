@@ -38,8 +38,15 @@ Feature Engineering - Binning
 **Feature Scaling**
 - Feature scaling is the process of adjusting the range of feature in a dataset to make sure they're all on a similar scale - which might help improve machine learning algorithms. 
 
+Further Notes: 
+It preserves the shape of the original distribution while compressing the range of the data to a specified interval. This can be beneficial to algorithms and models that may be sensitive to varying feature scales, such as those based on distances or gradients.
+
 - MinMaxScaler 
 This is a normalization technique that scales features to a specified range, between 0 and 1, preserving the relationship between data points. 
+
+Note: The MinMaxScaler normalizes the features of a dataset. It scales each feature independently by rescaling it to a range between 0 and 1 (or a different specified range). This kind of normalization method is particularly useful when the features need to be on a similar scale without distorting the differences in the ranges of the original data.
+
+Overall, the MinMaxScaler effectively transforms the original feature values into a standardized scale to improve model optimization and predictive accuracy in machine learning.
 
 - Z-score
 This is a way to standardize all your data in a way that tells you how many standard deviations each point is from the mean. 
